@@ -4,8 +4,8 @@ A `PyTorch` implementation of `Retinanet` for object detection as described in t
 The code is heavily influended by [Detectron2](https://github.com/facebookresearch/detectron2) , torchvision implementation of [RCNN models](https://github.com/pytorch/vision/tree/master/torchvision/models/detection) and the [FastAI implementation](https://github.com/fastai/course-v3/blob/master/nbs/dl2/pascal.ipynb)
 
 ## Vehicle Detection:
-- [vehicle_detection.ipynb](https://github.com/tae-h-yang/ml-vehicle-detection/blob/main/retinanet/pytorch_retinanet/vehicle_detection.ipynb)
-a
+- [vehicle_detection.ipynb](https://github.com/tae-h-yang/ml-vehicle-detection/blob/main/retinanet/pytorch_retinanet/vehicle_detection.ipynb) (The resulting weights and lightning logs after training the model are not included in this repo due to their large file size.)
+
 ## Installing Dependencies:
   Ensure that [python>=3.6](https://www.python.org/) , [torch>=1.6.0](https://pytorch.org/), torchvision>=0.7.0 is installed .
    ```bash
