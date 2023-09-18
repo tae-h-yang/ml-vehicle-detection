@@ -3,17 +3,10 @@ A `PyTorch` implementation of `Retinanet` for object detection as described in t
 
 The code is heavily influended by [Detectron2](https://github.com/facebookresearch/detectron2) , torchvision implementation of [RCNN models](https://github.com/pytorch/vision/tree/master/torchvision/models/detection) and the [FastAI implementation](https://github.com/fastai/course-v3/blob/master/nbs/dl2/pascal.ipynb)
 
-## TODO: 
-- [x] Create `Anchor Generator`.
-- [x] Create `ResNet` based `BackBone Model`.
-- [x] Create `FeaturePyramid` architecture as described in https://arxiv.org/abs/1612.03144.
-- [x] [Focal Loss](https://arxiv.org/abs/1708.02002) & `Regeression` and `Classification` Head for `Retinanet`.
-- [x] Assemble Retinanet Using `BackBone` => `FeaturePyramid` => `AnchorGenerator` => `Regeression` & `Classification`.
+## Vehicle Detection:
+- [vehicle_detection.ipynb](https://github.com/tae-h-yang/ml-vehicle-detection/blob/main/retinanet/pytorch_retinanet/README.md)
 
-## Tutorials:
-- <a href="https://colab.research.google.com/github/benihime91/pytorch_retinanet/blob/master/demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  [demo.ipynb](https://github.com/benihime91/pytorch_retinanet/blob/master/demo.ipynb)
-
-## Installing Dependencies :
+## Installing Dependencies:
   Ensure that [python>=3.6](https://www.python.org/) , [torch>=1.6.0](https://pytorch.org/), torchvision>=0.7.0 is installed .
    ```bash
    $ git clone https://github.com/benihime91/pytorch_retinanet.git
@@ -125,7 +118,7 @@ This is controlled via the `dataset.kind` parameter in `hparams.yaml`.
       test_paths: "test_data.csv" 
    ```
 
-### Note : 
+### Note: 
    - if validation dataset is not present set *hparams.dataset.val_paths = False.*
    - the model computes the COCO-API evaluation metrics on the test dataset.
    - for csv dataset each entry in the csv file should corresponding to a unique bounding-box.
@@ -144,7 +137,7 @@ This is controlled via the `dataset.kind` parameter in `hparams.yaml`.
    ```
     
 
-## Visualizing the bounding-box(s) over the image :
+## Visualizing the bounding-box(s) over the image:
 
    ```python
    from utils import visualize_boxes_and_labels_on_image_array as vis_bbs
@@ -185,7 +178,7 @@ This is controlled via the `dataset.kind` parameter in `hparams.yaml`.
    
    ```
 
-## References : 
+## References: 
 ```
 https://arxiv.org/abs/1708.02002
 https://github.com/facebookresearch/detectron2
