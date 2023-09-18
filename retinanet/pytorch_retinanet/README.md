@@ -5,7 +5,7 @@ The code is heavily influended by [Detectron2](https://github.com/facebookresear
 
 ## Vehicle Detection:
 - [vehicle_detection.ipynb](https://github.com/tae-h-yang/ml-vehicle-detection/blob/main/retinanet/pytorch_retinanet/vehicle_detection.ipynb)
-
+a
 ## Installing Dependencies:
   Ensure that [python>=3.6](https://www.python.org/) , [torch>=1.6.0](https://pytorch.org/), torchvision>=0.7.0 is installed .
    ```bash
